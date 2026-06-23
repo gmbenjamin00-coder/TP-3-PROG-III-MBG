@@ -32,3 +32,35 @@
   padding: 10px 20px;
   font-size: 16px;
 }
+
+/*Estilos para Personas */
+
+body.personas {
+  background-color: rgb(236, 236, 236);
+}
+.personas table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+.personas th,
+.personas td {
+  padding: 8px;
+}
+
+.personas #btn,
+.personas #btn2 {
+  margin: 10px auto;
+  gap: 10px;
+  flex: none;
+  padding: 7px;
+  background-color: rgb(235, 73, 36);
+  color: white;
+}
+
+.personas th {
+  color: white;
+  background-color: rgb(235, 73, 36);
+}
