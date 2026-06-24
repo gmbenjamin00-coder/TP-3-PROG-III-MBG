@@ -5,7 +5,6 @@ const inputEdad = document.getElementById("edad");
 const inputAltura = document.getElementById("altura");
 const inputPeso = document.getElementById("peso");
 const tabla = document.getElementById("tabla");
-const eliminar = document.getElementById("btn2");
 
 const personas = [];
 
@@ -58,7 +57,6 @@ function renderTabla() {
     tabla.appendChild(fila);
   });
 }
-const imc = (peso / ((altura / 100) * (altura / 100))).toFixed(2);
 formulario.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -69,37 +67,7 @@ formulario.addEventListener("submit", (event) => {
   const altura = inputAltura.value.trim();
   const peso = inputPeso.value.trim();
 
-  const imc = (peso / ((altura / 100) * (altura / 100))).toFixed(2);
-  // Validacion: No permitir cargar datos vacíos
-  if (
-    nombre === "" ||
-    apellido === "" ||
-    edad === "" ||
-    altura === "" ||
-    peso === ""
-  ) {
-    return;
-  }
-
-  personas.push({ nombre, apellido, edad, altura, peso, imc });
-  renderTabla();
-  formulario.reset();
-  inputNombre.focus();
-});
-
-// Mostrar arreglo pre-cargado
-renderTabla();
-
-formulario.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  // Obtengo valores de formulario
-  const nombre = inputNombre.value.trim();
-  const apellido = inputApellido.value.trim();
-  const edad = inputEdad.value.trim();
-  const altura = inputAltura.value.trim();
-  const peso = inputPeso.value.trim();
-
+  //Calcular IMC
   const imc = (peso / ((altura / 100) * (altura / 100))).toFixed(2);
   // Validacion: No permitir cargar datos vacíos
   if (
