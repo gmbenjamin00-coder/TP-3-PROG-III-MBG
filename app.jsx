@@ -102,8 +102,8 @@ function App() {
         <table>
           <thead>
             <tr>
-              <th>Apellido</th>
               <th>Nombre</th>
+              <th>Apellido</th>
               <th>Edad</th>
               <th>Altura(cm)</th>
               <th>Peso(kg)</th>
