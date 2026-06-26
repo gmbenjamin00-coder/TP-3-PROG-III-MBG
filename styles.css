@@ -110,6 +110,7 @@ body.react {
   gap: 15px;
 }
 .index header {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: rgb(128, 175, 241);
   border: 2px solid black;
 }
