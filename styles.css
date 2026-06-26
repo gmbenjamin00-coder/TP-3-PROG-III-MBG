@@ -64,3 +64,26 @@ td {
   color: white;
   background-color: rgb(235, 73, 36);
 }
+
+/*Estilos para React */
+
+body.react {
+  background-color: rgb(228, 228, 254);
+}
+.react main {
+  background-color: rgb(71, 202, 90);
+  border: 2px solid black;
+}
+
+.react #btn,
+.react #btn2 {
+  margin: 7px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.react th,
+.react td {
+  background-color: white;
+}
