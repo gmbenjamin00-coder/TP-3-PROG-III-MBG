@@ -1,12 +1,25 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Página de React</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- React + ReactDOM (versión desarrollo) -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Babel para transpilar JSX en el navegador -->
+    <script src="https://unpkg.com/@babel/standalone@7.29.7/babel.min.js"></script>
   </head>
-  <header>
-    <a href="index.html">Regresar</a>
-  </header>
-  <body></body>
+  <body>
+    <div id="root"></div>
+    <script src="app.jsx" type="text/babel"></script>
+    <script type="text/babel">
+      const container = document.getElementById("root");
+      const root = ReactDOM.createRoot(container);
+      root.render(<App />);
+    </script>
+  </body>
 </html>
