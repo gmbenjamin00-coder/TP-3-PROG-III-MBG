@@ -33,6 +33,10 @@
   font-size: 16px;
 }
 
+.flexbox a {
+  color: black;
+}
+
 /*Estilos para Personas */
 
 body.personas {
@@ -65,6 +69,10 @@ td {
   background-color: rgb(235, 73, 36);
 }
 
+.personas a {
+  color: black;
+}
+
 /*Estilos para React */
 
 body.react {
@@ -86,4 +94,26 @@ body.react {
 .react th,
 .react td {
   background-color: white;
+}
+
+.react a {
+  color: black;
+}
+
+/*Estilos para Index */
+.index h1 {
+  text-align: center;
+}
+
+.index h2 {
+  margin: 4px;
+  gap: 15px;
+}
+.index header {
+  background-color: rgb(128, 175, 241);
+  border: 2px solid black;
+}
+
+.index a {
+  color: black;
 }
